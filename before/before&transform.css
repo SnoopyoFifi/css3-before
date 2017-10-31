@@ -1378,66 +1378,133 @@
 	/* effect23 */
 
 	/* 扫光 */
-	.logo-site {
-		position: relative;
-		display: inline-block;
-    padding: 5px 10px;
-    overflow: hidden;
-    transition-duration: .5s;
-    display: inline-block;
-	}
-	.logo-site:before {
-		content: "";
-		position: absolute;
-		left: -665px;
-		top: -460px;
-		width: 250px;
-		height: 15px;
-		background-color: rgba(255,255,255,.5);
-		-webkit-transform: rotate(-45deg);
-		-moz-transform: rotate(-45deg);
-		-ms-transform: rotate(-45deg);
-		-o-transform: rotate(-45deg);
-		transform: rotate(-45deg);
-		-webkit-animation: searchLights 1s ease-in 1s infinite;
-		-o-animation: searchLights 1s ease-in 1s infinite;
-		animation: searchLights 1s ease-in 1s infinite;
-	}
-	@-webkit-keyframes searchLights {
-		0% {
-			left: -100px;
-			top: 0;
+		.logo-site {
+			position: relative;
+			display: inline-block;
+	    padding: 5px 10px;
+	    overflow: hidden;
+	    transition-duration: .5s;
+	    display: inline-block;
+		}
+		.logo-site:before {
+			content: "";
+			position: absolute;
+			left: -665px;
+			top: -460px;
+			width: 250px;
+			height: 15px;
+			background-color: rgba(255,255,255,.5);
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-animation: searchLights 1s ease-in 1s infinite;
+			-o-animation: searchLights 1s ease-in 1s infinite;
+			animation: searchLights 1s ease-in 1s infinite;
+		}
+		@-webkit-keyframes searchLights {
+			0% {
+				left: -100px;
+				top: 0;
+			}
+
+			to {
+				left: 120px;
+				top: 100px;
+			}
 		}
 
-		to {
-			left: 120px;
-			top: 100px;
-		}
-	}
+		@-moz-keyframes searchLights {
+			0% {
+				left: -100px;
+				top: 0;
+			}
 
-	@-moz-keyframes searchLights {
-		0% {
-			left: -100px;
-			top: 0;
-		}
-
-		to {
-			left: 120px;
-			top: 100px;
-		}
-	}
-
-	@keyframes searchLights {
-		0% {
-			left: -100px;
-			top: 0;
+			to {
+				left: 120px;
+				top: 100px;
+			}
 		}
 
-		to {
-			left: 120px;
-			top: 100px;
+		@keyframes searchLights {
+			0% {
+				left: -100px;
+				top: 0;
+			}
+
+			to {
+				left: 120px;
+				top: 100px;
+			}
 		}
-	}
+
+	/*a  upload */
+		.a-upload {
+		    padding: 4px 10px;
+		    /* height: 20px; */
+		    line-height: 20px;
+		    position: relative;
+		    cursor: pointer;
+		    color: #888;
+		    background: #fafafa;
+		    border: 1px solid #ddd;
+		    border-radius: 4px;
+		    overflow: hidden;
+		    text-decoration: none;
+		    display: inline-block;
+		    *display: inline;
+		    *zoom: 1
+		}
+
+		.a-upload  input {
+		    position: absolute;
+		    font-size: 100px;
+		    right: 0;
+		    top: 0;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		    cursor: pointer
+		}
+
+		.a-upload:hover {
+		    color: #444;
+		    background: #eee;
+		    border-color: #ccc;
+		    text-decoration: none
+		}
+
+
+		.file {
+	    position: relative;
+	    display: inline-block;
+	    background: #D0EEFF;
+	    border: 1px solid #99D3F5;
+	    border-radius: 4px;
+	    padding: 4px 12px;
+	    overflow: hidden;
+	    color: #1E88C7;
+	    text-decoration: none;
+	    text-indent: 0;
+	    line-height: 20px;
+	    text-decoration: none;
+		}
+		.file input {
+		    position: absolute;
+		    font-size: 100px;
+		    right: 0;
+		    top: 0;
+		    opacity: 0;
+		}
+		.file:hover {
+		    background: #AADFFD;
+		    border-color: #78C3F3;
+		    color: #004974;
+		    text-decoration: none;
+		}
+
+
+
 
 
 
@@ -2153,3 +2220,5 @@
 	.tip-comments ul.comment-list li.single-comment:hover .comment-meta .archive,.tip-comments ul.comment-list li.single-comment:hover .comment-meta .icon-trash {
     opacity: 1
 	}
+
+
