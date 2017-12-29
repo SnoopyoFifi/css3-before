@@ -1,4 +1,10 @@
 /* common */
+	/*透明度兼容性*/
+	.opacity {
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    opacity: 0.65;
+	}
+
 	/*元素内容为空时，隐藏*/
 	*:empty {
 	  display: none;
