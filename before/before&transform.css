@@ -1,4 +1,26 @@
 /* common */
+	/*元素内容为空时，隐藏*/
+	*:empty {
+	  display: none;
+	}
+	/*placeholder*/
+	input::-webkit-input-placeholder {
+		color: #96eb7f;
+    font-family: Lato, sans-serif;
+	}
+	input:-ms-input-placeholder { // IE10+
+		color: #96eb7f;
+    font-family: Lato, sans-serif;
+	}
+	input:-moz-placeholder { // Firefox4-18
+		color: #96eb7f;
+    font-family: Lato, sans-serif;
+	}
+	input::-moz-placeholder { // Firefox19+
+		color: #96eb7f;
+    font-family: Lato, sans-serif;
+	}
+
 	*, *::after, *::before {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
@@ -56,6 +78,10 @@
 	  -webkit-transform-origin: 86% 15%;
 	  transform-origin: 86% 15%;
 	}
+
+
+
+	
 
 	@-webkit-keyframes unskew {
 	  0% {
