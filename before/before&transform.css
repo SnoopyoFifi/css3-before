@@ -1991,11 +1991,11 @@
 	  cursor: pointer;
 	}
 
-	@media (min-width: 768px) and (max-width:991px) {
+/*	@media (min-width: 768px) and (max-width:991px) {
 	  .sidebar-toggle {
 	      display:none !important;
 	  }
-	}
+	}*/
 
 	.sidebar-toggle-line {
     position: relative;
@@ -2025,7 +2025,7 @@
 		transform: rotateZ(0deg);
 	}
 
-	sidebar-toggle-line:last-child {
+	.sidebar-toggle-line:last-child {
 		top: 0px;
 		transform: rotateZ(0deg);
 		width: 100%;
