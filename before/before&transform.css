@@ -1783,7 +1783,39 @@
   .triangle	.btn:hover::before {
     /* display: block; */
     opacity: .8;
-  }
+	}
+	
+/* triangle_tag */
+	.triangle_tag {
+		display: inline-block;
+    position: relative;
+    padding: 0px 10px;
+    background: #ccc;
+    color: green;
+    line-height: 1.5;
+    margin-left: 1em;
+    border-radius: 0;
+	}
+	.triangle_tag:before {
+		position: absolute;
+    content: " ";
+    border: transparent 0.75em solid;
+    border-right-color: #ccc;
+    top: 0;
+    left: -1.5em;
+    height: 0em;
+    width: 0em;
+	}
+	.triangle_tag:after {
+		position: absolute;
+    content: " ";
+    background: white;
+    width: 0.5em;
+    height: 0.5em;
+    top: 0.5em;
+    left: -0.125em;
+    border-radius: 0.25em;
+	}
 
 /* form  */
 	/* search */
